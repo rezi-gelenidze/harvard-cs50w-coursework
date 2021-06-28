@@ -1,0 +1,10 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <h1 class='error'>{{ error }}</h1>
+    <p>Return to homepage from <a style='text-decoration: underline;' href='{% url "wiki-index" %}'>here</a></p>
+{% endblock %}

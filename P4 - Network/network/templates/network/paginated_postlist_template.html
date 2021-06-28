@@ -1,0 +1,58 @@
+
+{% for post in page_obj %}
+<div class='post'>
+    <div class='first-row'>
+        <span class='post-username'><a href='{% url "profile" username=post.author %}' class='user-anchor'>{{ post.author }}</a></span>
+        <span class='post-timestamp'>{{ post.timestamp }}</span>
+    </div>
+
+    <p class='post-content'>{{ post.content }}</p>
+
+    <div class='bottom-row'>
+        <div class='post-likesection'>
+            {% if post.liked %}
+            <i class="fa fa-heart likeicon" aria-hidden="true"></i>
+            {% else %}
+            <i class="fa fa-heart-o likeicon" aria-hidden="true"></i>
+            {% endif %}
+            <span class='like-counter'>{{ post.likecount }}</span>
+        </div>
+        {% if post.author == user %}
+            <button class='btn btn-sm btn-secondary post-btn'>Edit</button>
+
+        {% endif %}
+    </div>
+    <input type="hidden" name='post_id' value="{{ post.pk }}" />
+    {% csrf_token %}
+</div>
+{% empty %}
+<h4 class='font-weight-bold m-5'>No posts.</h4>
+{% endfor %}
+
+
+{% if page_obj.paginator.num_pages > 1 %}
+<nav>
+  <ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+      <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+      <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+    {% endif %}  
+
+    {% for num in page_obj.paginator.page_range %}  
+
+      {% if page_obj.number == num %}
+          <li class="page-item active"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+
+      {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+      {% endif %}
+
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+      <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+      <li class="page-item"><a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a></li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}

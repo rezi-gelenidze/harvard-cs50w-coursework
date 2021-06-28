@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    {{ content|safe }}
+    <button class='btn btn-light btn-outline-dark' id='editBtn'>Edit content</button>
+    <script>
+        document.getElementById("editBtn").onclick = function () {
+            location.href = "{% url 'wiki-edit' %}{{ title }}";
+        };
+    </script>
+{% endblock %}

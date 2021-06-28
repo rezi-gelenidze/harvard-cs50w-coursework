@@ -1,0 +1,30 @@
+{% extends 'network/layout.html' %}
+
+{% block body %}
+    {% if message %}
+        <h4 class='font-weight-bold text-center m-4'>{{ message }}</h4>
+    {% else %}
+    <div id='profile-info'>
+        <p id='profile-username'>{{ profile.username }}</p>
+        <div id='follow-info'>
+            <p>Following <span id='following-count'>{{ profile.following }}</span></p>
+            <p>Followers <span id='follower-count'>{{ profile.followers }}</span></p>
+        </div>
+        {% if user.is_authenticated and user.pk != profile.pk %}
+        <button id='followbtn' class='btn btn-dark'>
+            {% if profile.is_following %}
+            Unfollow
+            {% else %}
+            Follow
+            {% endif %}
+        </button>
+        <input type="hidden" name='profile_pk' value="{{ profile.pk }}"/>
+        {% endif %}
+    </div>
+
+    {% include 'network/paginated_postlist_template.html' %}
+
+    {% endif %}
+    <hr />
+
+{% endblock %}

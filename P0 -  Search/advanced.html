@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced50</title>
+
+        <link href="https://cs50.harvard.edu/web/2020/favicon.ico?1611091724" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="css/advanced.css" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="image.html">Image Search</a>
+                </li>
+            </ul>
+        </header>
+        <p id='header-title'>Advanced Search</p>
+        <hr />
+        <main>
+            <form action="https://www.google.com/search" method='GET'>
+                    <label for='as_q'>all these words:<input type='text' name="as_q"/></label>
+                    <label for='as_q'>this exact word or phrase:<input type='text' name="as_epq"/></label>
+                    <label for='as_q'>any of these words:<input type='text' name="as_oq"/></label>
+                    <label for='as_q'>none of these words:<input type='text' name="as_eq"/></label>
+                    <input type='submit' value='Advanced search' />
+            </form>
+        </main>
+    </body>
+</html>

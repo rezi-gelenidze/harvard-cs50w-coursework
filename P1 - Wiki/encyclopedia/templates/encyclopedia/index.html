@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+{% url 'wiki-entry' as wkentry %}
+
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1 class='resHeader'>{{ heading }}</h1>
+    <hr />
+    <ul>
+        {% for entry in entries %}
+            <li class='searchRes'><a href="{{ wkentry }}/wiki/{{ entry }}">{{ entry }}</a></li>
+        {% empty %}
+            <h1>No results.</h1>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

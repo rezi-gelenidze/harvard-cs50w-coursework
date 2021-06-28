@@ -1,0 +1,42 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <!-- if category is specified display category_name -->
+    {% if category_name %}
+        <h2 id='category-listings-header'>{{ category_name }}</h2>
+    {% endif %}
+
+    <!-- if there are any active listings as results display header -->
+    {% if listings %}
+        <h2>{{ header }}</h2>
+    {% endif %}
+
+    {% for listing in listings %}
+        <div class='listing'>
+            <div class='listingimage'>
+                <a class='anchor' href='{% url "listings" listing_id=listing.pk %}'>
+                    {% if listing.url %}
+                        <img src='{{ listing.url }}' />
+                    {% else %}
+                        {% load static %}
+                        <img src="{% static 'auctions/noimage.jpeg' %}" />
+                    {% endif %}
+                </a>
+            </div>
+            <div class='listing-info'>
+                <div class='info-top'>
+                    <a class='anchor' href='{% url "listings" listing_id=listing.pk %}'>
+                        {{ listing.title }}
+                    </a>
+                    <p class='index-listing-price'>{{ listing.price }}</p>
+                </div>
+                <div class='info-bottom'>
+                    <p>{{ listing.description }}</p>
+                    <p class='listing-date'>{{ listing.date|date:"M j, Y" }}</p>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <h4>{{ empty_message }}</h4>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "network/layout.html" %}
+
+
+{% block body %}
+    <h4 class='text-center p-3'>All posts</h4>
+
+    {% if user.is_authenticated %}
+    <div id='post-res-message'>
+    </div>
+    <form id='post-new-form' method='POST' action='{% url "index" %}'>
+        {% csrf_token %}
+        <div id='post-new-toprow'>
+            <label>New post</label>
+            <input class='btn btn-sm btn-secondary' type="submit" value="Create">
+        </div>
+        <textarea id='new-content' class="form-control" name="content" placeholder="Type something..." required></textarea>
+    </form>
+    {% endif %}
+
+    {% include 'network/paginated_postlist_template.html' %}
+{% endblock %}

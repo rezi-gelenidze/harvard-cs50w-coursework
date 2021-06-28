@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search50</title>
+
+        <link href="https://cs50.harvard.edu/web/2020/favicon.ico?1611091724" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="image.html">Image search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="advanced.html">Advanced Search</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <img src="images/logo.png" width=350px>
+            <form class='search-form' action='https://www.google.com/search' method="GET">
+                <input id='search-bar' placeholder="Search Google" name='q' type="text" /><br />
+                <div id='search-buttons'>
+                    <input value="Google Search" name="btnK" type="submit" />
+                    <input value="I'm feeling lucky" name="btnI" type="submit" />
+                </div>    
+            </form>
+        </main>
+    </body>
+</html>

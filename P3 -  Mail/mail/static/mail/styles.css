@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+
+/* login and register pages */
+.login-register-forms {
+    margin: 10px auto 0px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-register-forms input {
+    width: 300px;
+}
+
+.login-register-forms > input[type='submit'] {
+    width: 100px;
+}
+
+.form-page-texts {
+    text-align: center;
+    padding: 20px;
+}
+
+.navbtn {
+    cursor: pointer;
+}
+
+
+/* compose email page */
+#compose-form {
+    width: 700px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#compose-form > * {
+    width: 100%;
+}
+
+#compose-form > input {
+    width: auto;
+    margin: 10px;
+}
+
+#compose-message {
+    display: none;
+    padding: 10px;
+}
+
+#from-to-fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#from-to-fields > div {
+    width: 49%;
+}
+
+.page-title {
+    text-align: center;
+    padding: 20px;
+}
+
+/* mailbox page */
+@keyframes rowremove {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+}
+
+.mailrow {
+    border: 1px solid #727a87;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    animation-name: rowremove;
+    animation-duration: 0.3s;
+    animation-play-state: paused;
+}
+
+.mailrow > .usermail {
+    font-weight: bold;
+}
+
+#page-title {
+    text-align: center;
+    padding: 10px;
+}
+
+/* mail page */
+#email-info {
+    list-style-type: none;
+    padding: 5px;
+}

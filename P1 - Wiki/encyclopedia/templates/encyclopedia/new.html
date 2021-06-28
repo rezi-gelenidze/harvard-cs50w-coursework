@@ -1,0 +1,19 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+    New entry
+{% endblock %}
+
+{% block body %}
+    {% if error %}
+        <h1 class='error'>Title already exists</h1>
+    {% endif %}
+    <h1>Create new page</h1>
+    <hr />
+    <form method='POST' action="{% url 'wiki-new' %}" id='newForm' >
+        {% csrf_token %}
+        <label for='entryTitle'>Title <input class='form-control' type='text' name='entryTitle' /></label><br />
+        <label for='entryTitle'>Content <textarea form="newForm" name="entryContent" class='form-control'>{{ content }}</textarea></label><br />
+        <input type="submit" class='btn btn-light btn-outline-dark' />
+    </form>
+{% endblock %}

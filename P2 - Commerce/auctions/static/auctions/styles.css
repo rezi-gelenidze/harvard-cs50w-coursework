@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    padding: 10px;
+}
+
+/* Index page */
+.anchor, .anchor:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.listing {
+    display: flex;
+    margin: 15px 50px 15px 10px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+}
+
+.listing-info {
+    width: 100%;
+    min-height: 180px;
+    height: max-content;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.info-top {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    border-width: 100%;
+}
+
+.info-top > p,
+.info-top > a {
+    font-size: larger;
+    font-weight: 600;
+    margin: 0px 25px 0px 25px;
+    padding: 10px 0px 10px 0px;
+}
+
+.index-listing-price {
+    color: green;
+}
+
+.info-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: max-content;
+    width: 100%;
+}
+
+.info-bottom > p {
+    margin: 10px 0px 10px 20px;
+}
+
+.listing-date {
+    color: grey;
+    font-size: small;
+}
+
+.listingimage {
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+
+.listingimage img {
+    max-width:200px;
+    max-height:180px;
+}
+
+
+/* category page */
+.category {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: small;
+}
+
+.categories-container {
+    width: 100vw;
+    height: max-content; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#category-listings-header {
+    width: max-content;
+    margin: 0px auto 0px auto;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+/* login-register pages */
+.login-register-page { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-register-page > form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 20px;
+}
+
+.login-register-page > form > * {
+    margin: 5px;
+}
+
+.login-register-page input[type='submit'] {
+    width: max-content;
+    align-self: center;
+}
+
+/* Create new listing page */
+.new-listing-form {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.new-listing-form input,
+.new-listing-form select,
+.new-listing-form textarea {
+    width: 300px;
+    height: 30px;
+    float: right;
+    outline-style: none;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.new-listing-form textarea {
+    min-height: 100px;
+}
+
+form * {
+    margin: 3px;
+}
+
+.new-listing-form > input[type='submit'] {
+    width: 100px;
+    height: auto;    
+    float: none;
+    align-self: center;
+}
+
+.new-listing-form label {
+    font-weight: 600;
+}
+
+
+/* Listing page */
+.error {
+    text-align: center;
+    font-weight: 600;
+    color: salmon;
+}
+
+
+.listing-top-area {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-box {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 450px;
+    max-height: 450px;
+}
+
+.listing-page-img {
+    max-width: inherit;
+    max-height: inherit;
+    width: auto;
+    height: auto;
+    padding: 1px;
+}
+
+.main-info-area {
+    flex: 1 0 450px;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.listing-title {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.listing-price {
+    width: max-content;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.main-info-area input[type='number'] {
+    width: 150px;
+    height: 40px;
+    outline-style: none;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.main-info-area input[type='submit'] {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    background-color: transparent;
+    height: 40px;
+    width: 60px;
+}
+
+.main-info-area input[type='submit']:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.main-info-area p {
+    padding-top: 10px;
+    width: 100%;
+    text-indent: 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+.main-info-area strong {
+    color: green;
+}
+
+.listing-details {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+}
+
+/* comments */
+.comments {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-comment form {
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.add-comment textarea {
+    flex: 1 0;
+    outline-style: none;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    background-color: transparent;
+    height: 40px;
+}
+
+.add-comment input {
+    flex: 0 0 40px;
+    height: 40px;
+}
+
+.comment {
+    padding: 10px 10px 10px 20px;
+    margin: 10px;
+    border-left: 1px solid rgb(224, 224, 224);
+}
+
+.comment span {
+    font-weight: 600;
+}
+
+.comment p {
+    text-indent: 20px;
+    word-wrap: break-word;
+}

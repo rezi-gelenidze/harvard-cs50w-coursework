@@ -1,0 +1,21 @@
+{% extends 'auctions/layout.html' %}
+
+{% block body %}
+    <h1>All categories</h1>
+    <div class='categories-container'>
+        <!-- Generate all categories as square boxes -->
+        {% for category in categories %}
+        <!-- 
+            every box is a link to its category, redirects 
+            to index with GET param category_id
+         -->
+        <a class='anchor' href='{% url "index" %}?category_id={{ category.pk }}'>
+            <div class='category'>
+                {% load static %}
+                <i class="{{ category.icon }}"></i>
+                <p>{{ category.category }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+{% endblock %}
