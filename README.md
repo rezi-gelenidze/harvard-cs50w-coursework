@@ -17,7 +17,7 @@ This repository contains all of CS50W course projects, including final project w
 * Project 2 - [Commerce](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P2%20-%20Commerce)
 * Project 3 - [Mail](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P3%20-%20%20Mail)
 * Project 4 - [Network](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P4%20-%20Network)
-* Final Project - [URL shortener](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/Final%20-%20URL%20shortener)
+* Final Project - [Temporary Unpublished](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/Final%20-%20URL%20shortener)
 
 
 ## Author
