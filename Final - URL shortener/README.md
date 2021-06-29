@@ -1,7 +1,7 @@
 
 # Final Project 
 
-Project is unpublished for a while.
+Project source code is unpublished.
 
 view free deployment on [heroku](https://s50.herokuapp.com)
 
