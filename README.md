@@ -1,27 +1,24 @@
 # CS50’s Web Programming with Python and JavaScript (CS50W)
 
-This course picks up where CS50x leaves off, diving more deeply into the design and implementation of web apps with Python,
-JavaScript, and SQL using frameworks like Django, React, and Bootstrap. Topics include database design, scalability, security,
-and user experience. Through hands-on projects, students learn to write and use APIs, create interactive UIs, and leverage cloud
-services like GitHub and Heroku. By semester’s end, students emerge with knowledge and experience in principles, languages, and
-tools that empower them to design and deploy applications on the Internet.
+Building upon the foundation laid by CS50x, this course dives deeper into web application development using Python, JavaScript, and SQL alongside frameworks like Django, React, and Bootstrap. Key areas of focus include database design, scalability, security, and user experience. The course emphasizes practical skills in API usage, interactive UI creation, and cloud services like GitHub and Heroku. By the end of the semester, students gain proficiency in web technologies, enabling them to design and deploy applications on the Internet.
 
-View course from [here](https://cs50.harvard.edu/web/2020/)
+Course Details: [CS50 Web Programming](https://cs50.harvard.edu/web/2020/)
 
-## About this repository
+## About This Repository
 
-This repository contains all of CS50W course projects, including final project written by me.
+Contained within this repository are all the project works I completed as part of the CS50W course. Each project showcases a range of skills and knowledge in web development, from front-end design to back-end functionality.
 
-* Project 0 - [Search](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P0%20-%20%20Search)
-* Project 1 - [Wiki](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P1%20-%20Wiki)
-* Project 2 - [Commerce](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P2%20-%20Commerce)
-* Project 3 - [Mail](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P3%20-%20%20Mail)
-* Project 4 - [Network](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P4%20-%20Network)
-* Final Project - [URL Shortener](https://github.com/rezi-gelenidze/Shortener)
+### Projects Overview:
 
+- **Project 0 - [Search](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P0%20-%20%20Search):** A front-end design mimicking a search engine.
+- **Project 1 - [Wiki](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P1%20-%20Wiki):** A Wikipedia-like online encyclopedia.
+- **Project 2 - [Commerce](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P2%20-%20Commerce):** An auction site similar to eBay.
+- **Project 3 - [Mail](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P3%20-%20%20Mail):** A front-end for an email client.
+- **Project 4 - [Network](https://github.com/rezi-gelenidze/CS50W-Projects/tree/master/P4%20-%20Network):** A Twitter-like social network.
+- **Final Project - [URL Shortener](https://github.com/rezi-gelenidze/Shortener):** A URL shortening service.
 
 ## Author
 
-**Rezi Gelenidze**, 16 years old from **Kutaisi, Georgia**.
+**Rezi Gelenidze**, a 16-year-old aspiring web developer from Kutaisi, Georgia. Passionate about creating and learning new web technologies.
 
-June 10, 2021
+Date: June 10, 2021
