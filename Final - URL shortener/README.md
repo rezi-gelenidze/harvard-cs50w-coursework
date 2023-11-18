@@ -1,9 +1,7 @@
 
 # Final Project - URL Shortener
 
-Project source code is unpublished.
-
-view free deployment on [heroku](https://s50.herokuapp.com)
+Project is uploaded as a separate [Repository](https://github.com/rezi-gelenidze/url-shortener-web-app)
 
 ## Preview
 
